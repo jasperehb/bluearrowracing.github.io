@@ -1016,8 +1016,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	letter-spacing: .03em;
 	line-height: 2em;
 	font-weight: 600;
-	color: #fff;
-	opacity: .2;
+	color: #3c3c3cFF;
 }
 
 .btn-primary-menu:focus {
