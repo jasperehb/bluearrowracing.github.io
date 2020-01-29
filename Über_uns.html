@@ -31,6 +31,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
 
 	<script src="js/modernizr.js"></script>
+	<script src="js/form.js"></script>
 
 	<title>Blue Arrow Racing</title>
 
@@ -252,7 +253,37 @@
 	                </div>
 				</div>
 		<!-- THE ABOUT PHOTO -->
-
+		<!-- TEXT-->
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+					<div class="lg-col-bg" >
+						<div class="lg-col-ttl2"> Kontakt </div>
+                        <div class="lg-col-wrt"> Wir freuen uns über Ihre Nachricht, dazu müssen Sie einfach das untenstehende Formular ausfüllen oder eine Email an <a href="mailto:Formel@oegym.de">Formel1@oegym.de</a> schreiben. </div>
+						<div class="lg-col-wrt">
+						<!-- CONTACT FORM-->
+							<div class="container">
+								  <form action="mailto:Formel1@oegym.de">
+									<label for="fname"> Name </label>
+									<input type="text" id="fname" name="firstname" placeholder="Ihr Name">
+									<label for="lname"> Wie wir Sie erreichen können </label>
+									<input type="text" id="lname" name="lastname" placeholder="Email-Adress, Telefonnummer, etc.">
+									<label for="country"> Anliegen </label>
+									<select id="country" name="country">
+									  <option value="australia">Kooperation/Sponsoring</option>
+									  <option value="canada">Feedback</option>
+									  <option value="usa">Nicht ausgewählt</option>
+									</select>
+									<label for="subject"> Nachricht </label>
+									<textarea id="subject" name="subject" placeholder="Schreiben Sie hier ihre Nachricht an uns" style="height:170px"></textarea>
+									<input type="submit" value="Absenden">
+								  </form>
+							</div>
+						<!-- END CONTACT FORM-->
+						</div>
+                    </div>
+				</div>
+			</div>
+		<!-- END TEXT-->
 	    </div>
 
         <!-- Artikel & Photos BUTTON -->
