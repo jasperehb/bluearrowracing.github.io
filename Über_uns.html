@@ -31,7 +31,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
 
 	<script src="js/modernizr.js"></script>
-	<script src="js/form.js"></script>
 
 	<title>Blue Arrow Racing</title>
 
@@ -262,19 +261,19 @@
 						<div class="lg-col-wrt">
 						<!-- CONTACT FORM-->
 							<div class="container">
-								  <form action="mailto:Formel1@oegym.de">
+								  <form action="mailto:Formel@oegym.de" method="POST" enctype="multipart/form-data" name="Kontakt Formular">
 									<label for="fname"> Name </label>
-									<input type="text" id="fname" name="firstname" placeholder="Ihr Name">
-									<label for="lname"> Wie wir Sie erreichen können </label>
-									<input type="text" id="lname" name="lastname" placeholder="Email-Adress, Telefonnummer, etc.">
+									<input type="text" id="fname" name="firstname" placeholder="Ihr Name" required>
+									<label for="lname"> Ihre Email-Adresse für Rückfragen </label>
+									<input type="text" id="lname" name="mail" placeholder=" Ihre Email-Adress" required>
 									<label for="country"> Anliegen </label>
-									<select id="country" name="country">
-									  <option value="usa">Nicht ausgewählt</option>
-									  <option value="australia">Kooperation/Sponsoring</option>
-									  <option value="canada">Feedback</option>
+									<select id="country" name="reason">
+									  <option value="not selected">Nicht ausgewählt</option>
+									  <option value="cooperation/sponsoring">Kooperation/Sponsoring</option>
+									  <option value="feedback">Feedback</option>
 									</select>
 									<label for="subject"> Nachricht </label>
-									<textarea id="subject" name="subject" placeholder="Schreiben Sie hier ihre Nachricht an uns" style="height:170px"></textarea>
+									<textarea id="subject" name="subject" placeholder="Schreiben Sie hier ihre Nachricht an uns" style="height:170px" required></textarea>
 									<input type="submit" value="Absenden">
 								  </form>
 							</div>

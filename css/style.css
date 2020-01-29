@@ -1477,10 +1477,14 @@ input[type=text], select, textarea {
   border: 0px solid;
   color: #CCC;
 
-  color: #17242eFF;
+  color: #17242e;
   background-color: #e8f0f5FF;
   border-type: none;
 }
+
+textarea:focus, input:focus{
+		 	   outline: none;
+			}
 
 input[type=submit] {
   background-color: #1c6abdFF;
