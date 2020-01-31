@@ -484,6 +484,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	font-family: 'DejaVue sans', 'Roboto', sans-serif;
 	font-weight: 300;
 	color: #3c3c3cFF;
+	padding-left: 3%;
 }
 /*** THE END WRITE AND PHOTO ***/
 
@@ -495,6 +496,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 	line-height: 1.7em;
 	font-family: 'DejaVue sans', 'Roboto', sans-serif;
 	color: #17242eFF;
+	padding-left: 3%;
 }
 
 .shw-cs4-ttl2{
@@ -504,7 +506,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     line-height: 1.7em;
     font-family: 'DejaVue sans', 'Roboto', sans-serif;
     color: #17242eFF;
-	padding-right: 3%;
+	padding-left: 3%;
 	max-width: 100%;
 }
 
@@ -517,6 +519,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     color: #989898FF;
     font-style: italic;
 	padding-top: 1%;
+	padding-left: 3%;
 }
 
 
@@ -1172,6 +1175,11 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     min-height: 1px;
     padding-left: 0px;
     padding-right: 0px;
+}
+.col-xs-12-text{
+	position: relative;
+    min-height: 1px;
+    padding: 3%
 }
 /*** THE END COL STYLE ***/
 
