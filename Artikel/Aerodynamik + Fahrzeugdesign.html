@@ -71,9 +71,6 @@
 						<a class="menu-links" href="../Photos.html"> Photos </a>
 						</div>
 						<div>
-						<a class="menu-links" href="Sponsoren.html"> Sponsoren </a>
-						</div>
-						<div>
 						<a class="menu-links" href="../&Uuml;ber_uns.html"> &Uuml;ber uns & Kontakt </a>
 						</div>
 						<button type="button" class="menu-close" data-dismiss="modal" aria-label="Close">
@@ -95,9 +92,9 @@
 	            <div class="row">
 	                <div class="col-md-12">
                        <div class="slider-bg" >
-							<div class="lg-col-ttl2"> Produktion </div>
-							<div class="shw-cs4-ttl2"> Fertigung von Chassis und Fl&uuml;geln </div>
-							<div class="shw-cs-ttl2"> Jasper Eggert </div>
+							<div class="lg-col-ttl2"> Aerodynamik + Fahrzeugdesign </div>
+							<div class="shw-cs4-ttl2"> Wie wird unser Auot möglichst schnell? </div>
+							<div class="shw-cs-ttl2"> Jannik Nicolaysen & Jasper Eggert </div>
                        </div>
 	                </div>
 		<!-- END HEADING -->
@@ -108,16 +105,17 @@
 					          <img src="../img/d1.jpg" alt="" class="img-lg-col3">
 						</div>
 	                </div>
-					<div class="shw-cs"> Cover </div>
+					<div class="shw-cs"> Strömungsanalyse mit FloEFD am PC </div>
 		<!--- END FOTO -->
 
 		<!-- TEXT-->
 	        <div class="row">
 	           <div class="col-md-12 col-xs-12">
                    <div class="lg-col-bg" >
-							<div class="lg-col-wrt"> Auf dem Monitor sieht unser Auto ja schon ganz schick aus, jetzt muss es nur noch in echt auch schön aussehen! Dazu muss unser Chassis gefräst werden. In der ersten Runde übernahm dies
-              Nordmetall mit dem Mobilen Kompetenzzentrum. Dafür noch einmal vielen Dank! <br> Für weitere Wettbewerbe unterstützt uns mit dem Fräsen des Chassis das IWT an der Universität Bremen. <br> Unsere Flügelelemente werden vom
-              School_Lab_Bremen 3D-gedruckt. Auch daf&uumlr noch einmal herzlichen Dank!
+							<div class="lg-col-wrt"> Bei der Entwicklung unseres Autos legen wir großen Wert
+                auf eine möglichst optimale Aerodynamik. Dazu verwendeten wir komplexe Modellierungsverfahren
+                mit Hilfe von Freiflächen. Der einzige, der darunter etwas gelitten hat, war der Konstruktionsrechner.
+                So musste Jannik schonmal bis zu 3 Minuten warten, bis eine Freiflächenoperation fertig berechnet war.
             </div>
                    </div>
 			</div>
@@ -160,23 +158,15 @@
           <div class="row">
              <div class="col-md-12 col-xs-12">
                    <div class="lg-col-bg" >
-              <div class="lg-col-wrt">Beim Fräsen unserer Chassis gab es soweit keine Probleme. Nur unsere Datei war bis einen Tag vor dem Frästermin nicht
-                                      zum Fräsen geeignet. Ein kurzer Anruf bei unserem CAD-Ingenieur Jannik genügte, um unseren Unterboden entfernen und
-                                      unsere Datei somit zum Fräsen geeignet machen zu lassen.
-                                      Unser G-Code besteht aus etwa 7500 Punkten, sie wurden alle vor Ort in der Schule erstellt. Laut den zwei freundlichen
-                                      Nordmetall-Mitarbeitern entsprach dies der "mittleren Preisklasse". Daraus folgt, dass es auf einer 3-Achs-Fräse etwa
-                                      15 Minuten dauerte, eine Chassishälfte zu fräsen. Das Wort "Hälfte" bedeutet in diesem Zusammenhang, dass von zwei Seiten
-                                      gefräst wurde: jeweils der Seite, die am Ende den linken und auf der anderen Seite den rechten Seitenkasten
-                                      beinhaltet. Zwischen den Fräsvorgängen wurde der G-Code auf den Steuerungsrechnern manuell gewechselt und die Rohlinge
-                                      händisch in der Fassung innerhalb der Fräse umgedreht.
-                                      <br>
-                                      Mit der Fertigungsqualität sind wir sehr zufrieden. Nun müssen wir nur noch Räder bestellen, Achsen und Lagerteile sind
-                                      bereits in der Schule eingetroffen.
-                                      <br>
-                                      Etwas anders lief es jedoch mit unseren Flügelteilen. Irgendwo zwischen unseren Rechnern und der Drucksoftware trat ein Fehler auf,
-                                      der die Bauteile sehr extrem verkleinerte. Laut Berichten war es ein "Pixelteil"... Trotz Vergrößerung ist es momentan zu klein,
-                                      um an unsere Autos montiert zu werden. Also müssen wir nächste Woche erneut ins School_Lab fahren, um die Teile abzuholen... Wie gut,
-                                      dass Bremen eine Fahrradstadt ist und wir nur etwa 15 Minuten radeln müssen, um dort hinzukommen...
+              <div class="lg-col-wrt">Um ein Fahrzeugdesign zu entwickeln, das einen möglichst geringen Luftwiderstand
+                aufweist, betrachte man, wie dieser berechnet wird: <br>
+                F<sub>LR</sub> = 1/2 * A * c<sub>w</sub> * v<sup>2</sup> <br>
+                Luftwiderstand = 1/2 * Querschnittsfläche (in Bewegungsrichtung) * Widerstandsbeiwert * Luftdichte * Geschwindigkeit<sup>2</sup> <br>
+                <br>
+                Hierbei lässt sich die Luftdichte nicht beeinflussen. Zudem ist ein hoher Geschwindigkeitswert ebenfalls erwünscht. Daher kann für die Entwicklung des Autos dieser Wert ebenfalls als Konstante betrachtet werden. Somit ist das aerodynamische Prinzip des Autos darauf ausgelegt möglichst geringe Werte für den cw-Wert (Widerstandsbeiwert) und die Querschnittsfläche in Fahrtrichtung zu produzieren.<br>
+                Bei dem Querschnitt des Autos von der vorderen Ansicht (diese ist der Querschnitt in Fahrtrichtung) gibt es verschiedene Aspekte zu beachten. Hierbei gibt es zunächst Bauteile zu beachten, welche durch die Regularien des Wettbewerbs bestimmte Normen erfüllen müssen. Diese sind das virtuelle Volumen (Regel 3g), die Reifen (Regel 4a-4e) und die Patronenkammer (Regel 5a-5d). Somit lassen sich Fahrtrichtung vor oder hinter diesen Teilen weitere Teile erstellen ohne das eine Vergrößerung des Luftwiderstandes durch eine erhöhte Querschnittsfläche entsteht.
+                <br>
+                Unter diesen Grundlagen sind weitere Ideen für das Auto entstanden und wurden umgesetzt.
             </div>
                    </div>
       </div>
@@ -213,21 +203,12 @@
 				</div>
 
                 <div class="col-md-4 col-xs-6">
-<<<<<<< HEAD
-				<a href="../index.html"> <div class="ftr-lnk"> Home </div> </a>
-				<div class="ftr-lnk-on"> Artikel </div>
-				<a href="../Photos.html"> <div class="ftr-lnk"> Photos </div> </a>
-				<a href="Sponsoren.html"> <div class="ftr-lnk"> Sponsoren </div> </a>
-				<a href="../&Uuml;ber_uns.html"> <div class="ftr-lnk"> &Uuml;ber uns & Kontakt </div> </a>
-                </div>
-=======
               <a href="../index.html"> <div class="ftr-lnk"> Home </div> </a>
               <div class="ftr-lnk-on"> Artikel </div>
               <a href="../Photos.html"> <div class="ftr-lnk"> Photos </div> </a>
               <a href="../&Uuml;ber_uns.html"> <div class="ftr-lnk"> &Uuml;ber uns & Kontakt </div> </a>
               <a href="https://www.oegym.de"> <div class="ftr-lnk"> Zur &OumlG-Website </div> </a>
                           </div>
->>>>>>> a26dee30e35806efeb8861b9e2dfc45901020918
 
 
                </div>
